@@ -1,0 +1,301 @@
+// 可见容器
+.pg_main {
+  padding: 16px;
+}
+
+.pg_main.white {
+  background-color: #ffffff;
+}
+
+// 可见容器内部，具体操作区域
+.pg_content {
+  border-radius: 2px;
+}
+
+.pg_content.transparent {
+  background-color: transparent;
+}
+
+.pg_content.white {
+  background-color: #ffffff;
+}
+
+.pg_filter {
+  padding: 10px 10px 0px 10px;
+  background-color: #ffffff;
+  text-align: left;
+  position: relative;
+  padding-right: 40px;
+
+  border-radius: 8px;
+  overflow: hidden;
+
+  form.el-form .el-form-item{
+    margin-bottom: 0;
+  }
+
+  .pg_filter_li {
+    width: 200px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .pg_filter_li + .pg_filter_li {
+    //margin-left: 10px;
+  }
+
+  .pg_filter_li [class="el-*"]{
+    display: none;
+    margin-bottom: 0;
+  }
+  .pg_filter_li.el-switch, .pg_filter_li.el-radio-group{
+    width: auto;
+  }
+  .pg_filter_li.el-radio-group{
+    //margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .pg_filter_collapse {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #999999;
+    cursor: pointer;
+    background: #fff linear-gradient(
+        45deg,
+        rgb(250, 250, 250) 0, rgb(250, 250, 250) 25%, transparent 25%, transparent 50%,
+        rgb(250, 250, 250) 50%, rgb(250, 250, 250) 75%, transparent 75%, transparent
+    ) center repeat;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+
+    &:before {
+
+    }
+
+    &:hover {
+      color: #222;
+      //background-color: #fdfdfd;
+      background: linear-gradient(
+          -45deg,
+          rgb(250, 250, 250) 0, rgb(250, 250, 250) 25%, transparent 25%, transparent 50%,
+          rgb(250, 250, 250) 50%, rgb(250, 250, 250) 75%, transparent 75%, transparent
+      );
+      background-size: 10px 10px;
+      background-repeat: repeat;
+    }
+  }
+}
+
+.pg_filter + .pg_list {
+  margin-top: 16px;
+}
+
+.pg_list {
+  background-color: #fff;
+
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pg_table {
+  //border:1px transparent solid;
+  //border-top: 4px solid #409eff;
+  //border-image: linear-gradient(to right, #dbdbdb, #fafafa, #409eff5e) 1 10;
+  //padding-top: 10px;
+
+  .el-table--mini thead {
+    tr {
+      background-color: transparent;
+
+      background: linear-gradient(
+          45deg,
+          rgb(250, 250, 250) 0, rgb(250, 250, 250) 25%, transparent 25%, transparent 50%,
+          rgb(250, 250, 250) 50%, rgb(250, 250, 250) 75%, transparent 75%, transparent
+      );
+      background: linear-gradient(
+          45deg,
+          rgb(253, 253, 253) 0, rgb(253, 253, 253) 25%, transparent 25%, transparent 50%,
+          rgb(253, 253, 253) 50%, rgb(253, 253, 253) 75%, transparent 75%, transparent
+      );
+      background-size: 20px 20px;
+      background-repeat: repeat;
+      //background-image: linear-gradient(to bottom, #f8f8f8,#ffffff, #f8f8f8);
+      //background-image: linear-gradient(to bottom, #ffffff, #3041561a, #ffffff);
+      background: none;
+      background-color: #fafafa;
+    }
+  }
+
+  .el-table--mini th {
+    padding: 10px 0 !important;
+    background-color: transparent !important;
+  }
+}
+
+.pg_pagee {
+  padding: 10px;
+  background: linear-gradient(
+      -45deg,
+      rgb(253, 253, 253) 0, rgb(253, 253, 253) 25%, transparent 25%, transparent 50%,
+      rgb(253, 253, 253) 50%, rgb(253, 253, 253) 75%, transparent 75%, transparent
+  );
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+.g_mt{
+  margin-top: 16px;
+}
+// 全局notice样式
+.g_notice_title {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border-left: 4px solid #3a8ee6;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2c3e50;
+  border-radius: 2px;
+}
+
+// 全局表格样式
+
+// 全局drawer使用的样式
+.racoon_drawer_main {
+  height: 100%;
+}
+.racoon_drawer_body {
+  padding-bottom: 72px;
+}
+.racoon_drawer_footer {
+  border-top: 1px dashed #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #fff;
+
+  .el-button {
+    min-width: 100px;
+  }
+}
+
+// 全局表格按钮
+
+.action_btn1{
+  //display: inline-block;
+  //vertical-align: middle;
+  //border: 0;
+  //outline: 0;
+  //background-color: #fe7300;
+  //font-size: 14px;
+  //border-radius: 2px;
+  //color: #ffffff;
+  //padding: 6px 13px;
+
+  border-radius: 4px;
+  border: 1px solid #c8c2c2;
+  font-size: 13px;
+  padding: 6px 13px;
+  cursor: pointer;
+}
+.action_btn{
+  border-radius: 2px;
+  border: 1px solid #c8c2c2;
+  background-color: #ffffff;
+  font-size: 13px;
+  padding: 2px 16px;
+  cursor: pointer;
+}
+.action_btn:hover{
+  border-color: #0078d4;
+  background-color: #0078d411;
+}
+.action_btn:active{
+  background-color: #0078d444;
+}
+
+//
+.g_radius{
+  border-radius: 2px;
+}
+.g_radius4{
+  border-radius: 4px;
+}
+.g_radius10{
+  border-radius: 10px;
+}
+// 全局键值对样式
+.g_kv{
+  padding: 10px;
+  display: inline-block;
+  //vertical-align: middle;
+  width: 22%;
+  white-space: nowrap;
+}
+.g_kv.auto{
+  width: auto;
+}
+.g_kv.break{
+  white-space: pre-wrap;
+}
+.g_key{
+  min-width: 80px;
+  display: inline-block;
+  vertical-align: top;
+  color: #515a6e;
+  font-size: 14px;
+  text-align: right;
+  //background-color: #f2f2f2;
+  line-height: 28px;
+}
+.g_val{
+  line-height: 28px;
+  //background-color: #ff0;
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 14px;
+  color: #111;
+  vertical-align: baseline;
+  //vertical-align: middle;
+  vertical-align: text-top;
+}
+
+button{
+  -webkit-tap-highlight-color: transparent;
+
+}
+// // // // // // // // // // // // // // //
+.lay_left {
+
+}
+.lay_right{
+
+}
+.lay_top{
+
+}
+.lay_head{
+
+}
+.lay_exhibit{
+
+}
+.lay_main{
+
+}
+.lay_mobile{
+}
+.lay_add{
+
+}

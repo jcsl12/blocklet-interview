@@ -1,0 +1,43 @@
+name: inteview-demo
+description: demo
+group: static
+main: .
+author:
+  name: daguanren
+specVersion: 1.2.7
+version: 1.0.0
+keywords:
+  - vue
+files:
+  - blocklet.md
+  - screenshots
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: http
+did: z8iZpQRiikGj7UNA6PpK4hN643mfzNQLapBV3
+community: ''
+documentation: ''
+homepage: ''
+license: ''
+payment:
+  price: []
+  share: []
+timeout:
+  start: 60
+requirements:
+  server: '>=1.7.0'
+  os: '*'
+  cpu: '*'
+  nodejs: '*'
+environments: []
+capabilities:
+  clusterMode: false
+  component: true
+screenshots: []
+components: []
+scripts:
+  dev: npm run start

@@ -1,0 +1,361 @@
+@import "./global";
+
+html, body {
+  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+  font-family: "Inter var", sans-serif;
+  font-feature-settings: "zero", "ss01";
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+//**********************************
+.lay_left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  border-right: 1px solid #eeeeee;
+  background-color: #fff;
+}
+
+.lay_right {
+  padding-top: 95px;
+  margin-left: 240px;
+  min-height: 100vh;
+}
+
+.lay_top {
+  position: fixed;
+  top: 0;
+  left: 240px;
+  right: 0;
+  z-index: 2;
+  background-color: #fff;
+  border-bottom: 1px solid #eeeeee;
+
+  .app_top {
+    .app_head {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+      height: 64px;
+
+      .app_name {
+
+      }
+
+      .head_center {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .page_search {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        border-radius: 40px;
+        overflow: hidden;
+
+        > input {
+          color: rgb(0, 0, 0);
+          border: none;
+          width: 45vw;
+          box-sizing: border-box;
+          max-width: 750px;
+          font-size: 1rem;
+          overflow: hidden;
+          height: 40px;
+          background: rgba(255, 255, 255, 0.4);
+          padding: 0px 5px 0px 17px;
+          outline: 0;
+          border: 0;
+          border: 1px solid #eeeeee;
+          border-top-left-radius: 40px;
+          border-bottom-left-radius: 40px;
+
+          &:focus {
+            //border-color: #aaa;
+            background-color: #fafafa;
+          }
+        }
+
+        > button {
+          height: 40px;
+          border: 0;
+          outline: 0;
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all .3s;
+
+          &:hover {
+            background-color: #dadada;
+          }
+
+          > img {
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      .btn_theme {
+        margin-left: 10px;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        color: #ff0;
+        cursor: pointer;
+      }
+
+      .btn_sign {
+        display: flex;
+        cursor: pointer;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        opacity: 1;
+        border: none;
+        padding: 10px 13px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 12px;
+        margin: 10px 0px;
+        height: 34px;
+        min-width: max-content;
+      }
+    }
+
+    .app_exhibit {
+      display: flex;
+      flex-direction: row;
+      border-top: 1px solid #eeeeee;
+      height: 30px;
+
+      > * {
+        display: none;
+      }
+    }
+  }
+
+  .app_name {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+}
+
+.lay_head {
+
+}
+
+.lay_exhibit {
+
+}
+
+.lay_main {
+
+}
+
+.lay_mobile {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  //background-color: #fff;
+
+  .mobile_nav_ul {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+
+    .nav_item {
+      flex: 1;
+      height: 100%;
+      width: 16.6%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+
+      &:hover {
+        background-color: rgb(249, 247, 246);
+      }
+    }
+
+    .nav_icon {
+
+    }
+
+    .nav_title {
+      font-size: 1rem;
+    }
+  }
+}
+
+.lay_add {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  z-index: 200;
+  padding-bottom: env(safe-area-inset-bottom);
+  pointer-events: none;
+
+  .add_wrap {
+    max-width: 728px;
+    width: 728px;
+    height: 90px;
+    display: inline-block;
+  }
+}
+
+///////////////////////////////////////////////////////
+
+
+//**********************************
+@media screen and (max-width: 1490px) {
+
+}
+
+// 小于836视为移动端
+@media screen and (max-width: 836px) {
+  .lay_left {
+    display: none;
+  }
+  .lay_right {
+    margin-left: 0;
+    padding-bottom: 100px;
+  }
+  .lay_top {
+    left: 0;
+
+    .app_head {
+      height: 52px;
+      padding: 6px 0;
+    }
+
+    .app_name {
+      display: flex;
+    }
+  }
+  .lay_exhibit {
+
+  }
+  .lay_main {
+
+  }
+  .lay_mobile {
+    display: block;
+  }
+  .lay_add {
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .lay_left {
+
+  }
+  .lay_right {
+
+  }
+  .lay_top {
+    .app_head {
+      .app_name {
+        padding: 0;
+      }
+
+      .head_center {
+        input {
+          display: none;
+        }
+      }
+    }
+  }
+  .lay_head {
+
+  }
+  .lay_exhibit {
+
+  }
+  .lay_main {
+
+  }
+  .lay_mobile {
+  }
+  .lay_add {
+
+  }
+
+  .block_info {
+    .block_dtl {
+      .ul_dtl {
+        .dtl_kv {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .lay_mobile {
+    height: 60px;
+
+    .mobile_nav_ul {
+      .nav_title {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+}
+
+
+.g_text_copy {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(153, 153, 153);
+  -webkit-mask-image: url(~@/assets/icon-copy.svg);
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  display: inline-flex;
+  margin: 0px 0px 0px 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(68, 66, 66);
+  }
+}

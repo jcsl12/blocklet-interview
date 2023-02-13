@@ -1,16 +1,18 @@
 # 开始开发
 
+```text
+1. 当前项是基于已有项目初始化而未使用blocklet脚手架。
+2. 未使用到blocklet sever
+3. 路由主要有
+-- /home 首页，只有一个按钮和搜索框
+-- /dashboard 邮件里提到的样例地址
+4. 当前已打包生成放到 /outputs/dist.zip
+```
 ### 调试启动地址
 http://xxx:10086/
 
-### 项目构建打包输出文件
 
-/outputs/dist.zip
 
-### 路由
-```text
--- /home 首页，只有一个按钮和搜索框
--- /dashboard 邮件里提到的样例地址
 ```
 
 ### 安装依赖
